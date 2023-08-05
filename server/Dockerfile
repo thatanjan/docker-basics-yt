@@ -15,16 +15,19 @@
 # CMD ["yarn", "dev"]
 
 
-# Before optimized
+# after optimized
 # Base level(OS)
 FROM node:18-alpine
+
 
 # Working directory
 WORKDIR /server
 
-COPY . .
+COPY package*.json .
 
 RUN npm install
+
+COPY . .
 
 # EXPOSE 3000
 
