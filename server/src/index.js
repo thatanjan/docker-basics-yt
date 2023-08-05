@@ -45,7 +45,6 @@ app.get('/', (req, res) => {
 	res.send(data)
 })
 
-
 // Start the server
 const port = 4000
 app.listen(port, () => {
